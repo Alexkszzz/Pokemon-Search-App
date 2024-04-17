@@ -1,0 +1,217 @@
+:root {
+    --main-color: #232946;
+    --secondary-color: #fffffe;
+    --highlight-color: #eebbc3;
+    --highlight-hover: #fec7d7;
+    --sprite-background: #eff0f3;
+    --stat-background: #7f21ab
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+h1 {
+    color: white
+}
+
+.container {
+    background-color: var(--secondary-color);
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+.input-bar {
+    margin-top: 10px;
+}
+
+#search-input {
+    width: 200px;
+    height: 25px;
+}
+
+#search-button {
+    height: 35px;
+    width: 75px;
+    background-color: var(--highlight-color);
+    border-radius: 7px;
+}
+
+#search-button:hover {
+    cursor: pointer;
+    background-color: var(--highlight-hover);
+}
+
+#sprite-container {
+    position: relative;
+    height: 300px;
+    background-color: var(--sprite-background);
+    margin: 15px 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sprite-container .name-tag {
+    position: absolute;
+    left: 10px;
+}
+
+#sprite-container .name-tag span {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+#sprite-container .measure {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+#sprite-container .measure span {
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+img {
+    margin: auto;
+    visibility: hidden;
+}
+
+#types {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    min-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.type {
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 0.85 rem;
+    color: #f5f6f7;
+    background-color: var(--stat-background);
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    border-left: 5px solid #f5f6f7;
+}
+
+tr {
+    border-bottom: 5px solid #f5f6f7;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+@media screen and (min-width: 550px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .type {
+        width: 60px;
+    }
+}
+
+/* Color for pokemon type */
+.normal {
+    background-color: #b7b7aa;
+}
+
+.fire {
+    background-color: #ff6f52;
+}
+
+.water {
+    background-color: #42a1ff;
+}
+
+.electric {
+    background-color: #fecc33;
+}
+
+.grass {
+    background-color: #78cc55;
+}
+
+.ice {
+    background-color: #66ccfe;
+}
+
+.fighting {
+    background-color: #d3887e;
+}
+
+.poison {
+    background-color: #c68bb7;
+}
+
+.ground {
+    background-color: #dfba52;
+}
+
+.flying {
+    background-color: #8899ff;
+}
+
+.psychic {
+    background-color: #ff66a3;
+}
+
+.bug {
+    background-color: #aabb23;
+}
+
+.rock {
+    background-color: #baaa66;
+}
+
+.ghost {
+    background-color: #9995d0;
+}
+
+.dragon {
+    background-color: #9e93f1;
+}
+
+.dark {
+    background-color: #b59682;
+}
+
+.steel {
+    background-color: #abaabb;
+}
+
+.fairy {
+    background-color: #ed99ed;
+}
